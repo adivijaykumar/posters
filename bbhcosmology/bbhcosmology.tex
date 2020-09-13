@@ -161,7 +161,7 @@
 
 \begin{textblock}{25}(0,0)
 %\includegraphics[width=\paperwidth]{banners/banner11.pdf}
-\colorbox{BannerElevenColor}{\parbox[c][0.07\textwidth][c]{1.0\textwidth}{\rule{\linewidth}{0pt}}}
+\colorbox{BannerElevenColor}{\parbox[c][0.062\textwidth][c]{1.0\textwidth}{\rule{\linewidth}{0pt}}}
 %\includegraphics[height=2.6in]{banners/banner11.pdf}
 \end{textblock}
 
@@ -171,7 +171,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{textblock}{15}(0.75,0.4)	 % syntax: {colum_width} (x_coordinate, y_coordinate)
+\begin{textblock}{15}(0.75,0.1)	 % syntax: {colum_width} (x_coordinate, y_coordinate)
 {\color{TitleColor}
 
 \Title{\begin{center}
@@ -180,7 +180,7 @@
 }
 \end{textblock}
 
-\begin{textblock}{23}(0.75,2.2)
+\begin{textblock}{23}(0.75,1.88)
 \Authors{\textbf{Aditya Vijaykumar}$^1$, ~MV Saketh$^2$, ~Sumit Kumar$^3$,  ~Parameswaran Ajith$^{1,4}$, ~Tirthankar Roy Choudhury$^{5}$} \\ 
 \textit{$^1$ International Centre for Theoretical Sciences, Tata Institute of Fundamental Research, Bengaluru 560089, India} \\
 \textit{$^{2}$ Department of Physics, University of Maryland, College Park, Maryland 20742, USA} \\
@@ -206,13 +206,13 @@
 %%%%%%%%%%%%%%%%%%%%%% An example text block %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{textblock}{7}(1,4.4)	% syntax: {colum_width} (x_coordinate, y_coordinate) in inches
+\begin{textblock}{7.3}(0.7,4.3)	% syntax: {colum_width} (x_coordinate, y_coordinate) in inches
 \LHead{Introduction}\\
-Future gravitational-wave detectors will detect \textbf{hundreds of thousands of BBH events a year}. We can imagine these events as a \textit{survey of BBHs} akin to \textit{galaxy surveys}.
+Future gravitational-wave detectors will detect \textbf{hundreds of thousands of BBH events a year}. We can imagine these events as a \textit{survey of BBHs}, akin to \textit{galaxy surveys}.
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=1.6]{Nz_vs_z.pdf}
+	\includegraphics[scale=1.8]{Nz_vs_z.pdf}
 	\caption{\small{Solid curve with shaded region shows the total number of merger events as a function of redshift in shell of thickness $\sim 350~h^{-1}$~Mpc and $\sim 500~h^{-1}$~Mpc in comoving distance. The dashed lines show the average number of mergers in the shell of given thickness for which the errors in sky localization are within a degree square and errors in estimating the comoving distance are $\le 90~h^{-1}$~Mpc for a network of three 3G detectors.}} 
 	\label{fig:mergers_events}
 \end{figure}
@@ -236,7 +236,7 @@ $b_\mathrm{gal}$ is called the \textbf{linear bias}  and depends on the luminosi
 \LHead{Localization errors and $ \xi(r) $}
 \begin{figure*}[t]
 	\centering
-	\includegraphics[scale=1.6]{processed_correlation_function.pdf}
+	\includegraphics[scale=1.75]{processed_correlation_function.pdf}
 	%\includegraphics[scale=1.2]{../../papers/HigherModes/figs/PNNRMatching_SpEC_q8.pdf}
 	\caption{\small{The ``smeared'' correlation function (dashed lines) and the ``true'' correlation function (solid lines) for various redshifts. The true correlation function is simply the dark matter correlation function assuming the standard model of cosmology. The ``smearing'' is calculated assuming that the distribution of errors in localization of GW population follow a Gaussian distribution with mean $\{\mu_\mathrm{RA} = 0.5^\circ, \mu_\mathrm{dec} = 0.5^\circ, \mu_\mathrm{d} = 50~h^{-1}~\mathrm{Mpc}\}$ and standard deviation $\{\sigma_\mathrm{RA} = 0.5^\circ, \sigma_\mathrm{dec} = 0.5^\circ, \sigma_\mathrm{d} = 20 h^{-1}~\mathrm{Mpc}\}$. }}
 	\label{fig:hybridTD_l2m2}
@@ -245,7 +245,7 @@ $b_\mathrm{gal}$ is called the \textbf{linear bias}  and depends on the luminosi
 
 \end{textblock}
 
-\begin{textblock}{7}(9,4.2)	% syntax: {colum_width} (x_coordinate, y_coordinate) in inches
+\begin{textblock}{7.3}(8.9,3.6)	% syntax: {colum_width} (x_coordinate, y_coordinate) in inches
 \vspace{2cm}
 Due to the large statistical uncertainties in the GW localization, \textbf{the observed correlation function of BBHs will smeared}. The smeared correlation function can be computed by convolving the actual correlation function with the localization posteriors obtained from GW data.
 \begin{equation}
@@ -256,7 +256,7 @@ Due to the large statistical uncertainties in the GW localization, \textbf{the o
 \LHead{Simulations and Results}\\
 \begin{figure}[t]
 	\centering
-	\includegraphics[scale=1.6]{comparison_data_expected.pdf}
+	\includegraphics[scale=1.8]{comparison_data_expected.pdf}
 	\caption{\small{Smeared correlation function for a given distribution of localization errors is plotted along with the one recovered from simulated events at redshift 0.3 and input bias factor of 1.5. Smeared correlation function is scaled with input bias for comparison. We used 5000 simulated events distributed in a shell of thickness 350 $h^{-1}$~Mpc around redshift $0.3$} }
 	\label{fig:simulation_example}
 \end{figure}
@@ -264,7 +264,7 @@ We use the publicly available code \textsc{lognormal\_galaxies}\footnote{hello},
 
 \begin{figure*}[t]
 	\centering
-	\includegraphics[scale=0.65]{moneyplot.png}
+	\includegraphics[scale=0.73]{moneyplot.png}
 	%\includegraphics[scale=1.2]{../../papers/HigherModes/figs/PNNRMatching_SpEC_q8.pdf}
 	\caption{\small{The recovered bias factor $b_\mathrm{BBH}$ ({68\%} confidence regions) from various redshifts bins (with shell thickness of $\sim 350~h^{-1}$ Mpc). The catalogs were created using the dark matter correlation function with  linear bias $1.5$. With a moderate observational time of three years, \textbf{we can recover the bias to within $\sim 20\%$ at $z \lesssim 0.7$, while errors in bias recovery are larger at redshift $z \sim 1$ due to large errors in localization}}}
 \end{figure*}
@@ -295,6 +295,7 @@ The measured bias factor \textbf{probes the underlying dark matter distribution}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \end{document}
 
