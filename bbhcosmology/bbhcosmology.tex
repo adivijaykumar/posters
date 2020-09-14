@@ -213,7 +213,7 @@ Future gravitational-wave detectors will detect \textbf{hundreds of thousands of
 \begin{figure}
 	\centering
 	\includegraphics[scale=1.8]{Nz_vs_z.pdf}
-	\caption{\small{Solid curve with shaded region shows the total number of merger events as a function of redshift in shell of thickness $\sim 350~h^{-1}$~Mpc and $\sim 500~h^{-1}$~Mpc in comoving distance. The dashed lines show the average number of mergers in the shell of given thickness for which the errors in sky localization are within a degree square and errors in estimating the comoving distance are $\le 90~h^{-1}$~Mpc for a network of three 3G detectors.}} 
+	\caption{\small{Solid curve with shaded region shows the total number of detectable merger events as a function of redshift in shell of thickness $\sim 350~h^{-1}$~Mpc and $\sim 500~h^{-1}$~Mpc in comoving distance. The dashed lines show the average number of mergers in the shell of given thickness for which the errors in sky localization are within a degree square and errors in estimating the comoving distance are $\le 90~h^{-1}$~Mpc for a network of three 3G detectors.}} 
 	\label{fig:mergers_events}
 \end{figure}
 Galaxy surveys can be used to measure the \textbf{two-point correlation function (2PCF)}. Given a cosmological density field $ \rho(x) $, one can define overdensity field $\delta(x) := \rho(x) / \overline{\rho} - 1$.
@@ -247,7 +247,7 @@ $b_\mathrm{gal}$ is called the \textbf{linear bias}  and depends on the luminosi
 
 \begin{textblock}{7.3}(8.9,3.6)	% syntax: {colum_width} (x_coordinate, y_coordinate) in inches
 \vspace{2cm}
-Due to the large statistical uncertainties in the GW localization, \textbf{the observed correlation function of BBHs will smeared}. The smeared correlation function can be computed by convolving the actual correlation function with the localization posteriors obtained from GW data.
+Due to the large statistical uncertainties in the GW localization, \textbf{the observed correlation function of BBHs will smeared}. The smeared correlation function can be computed by convolving the actual correlation function $ \xi_\mathrm{tr} $ with the localization posteriors $ P(\x) $ obtained from GW data.
 \begin{equation}
 \xi(\x, \y) = \int_V dV_\mu \int_V dV_\nu \,  P(\x-\bmu) \, P(\y-\bnu) \, \xit(\bmu, \bnu)
 \label{eq:xi_v2}
@@ -257,7 +257,7 @@ Due to the large statistical uncertainties in the GW localization, \textbf{the o
 \begin{figure}[t]
 	\centering
 	\includegraphics[scale=1.8]{comparison_data_expected.pdf}
-	\caption{\small{Smeared correlation function for a given distribution of localization errors is plotted along with the one recovered from simulated events at redshift 0.3 and input bias factor of 1.5. Smeared correlation function is scaled with input bias for comparison. We used 5000 simulated events distributed in a shell of thickness 350 $h^{-1}$~Mpc around redshift $0.3$} }
+	\caption{\small{Simulated (smeared) correlation function for a given distribution of localization errors is plotted along with the one recovered from simulated events at redshift 0.3 and input bias factor of 1.5. Smeared correlation function is scaled with input bias for comparison. We used 5000 simulated events distributed in a shell of thickness 350 $h^{-1}$~Mpc around redshift $0.3$} }
 	\label{fig:simulation_example}
 \end{figure}
 We use the publicly available code \textsc{lognormal\_galaxies}\footnote{hello}, to simulate galaxy catalogs at various redshifts with a certain bias $ b_\mathrm{gal} $. We assume that GW events occur in any random subsample of the galaxies in the catalog, which essentially implies $b_\mathrm{BBH}=b_\mathrm{gal}$. We then simulate mock BBH catalogs by assuming a (gaussian) localization error distribution and check whether we are able to recover the bias consistent with the input value.\\
@@ -268,7 +268,7 @@ We use the publicly available code \textsc{lognormal\_galaxies}\footnote{hello},
 	%\includegraphics[scale=1.2]{../../papers/HigherModes/figs/PNNRMatching_SpEC_q8.pdf}
 	\caption{\small{The recovered bias factor $b_\mathrm{BBH}$ ({68\%} confidence regions) from various redshifts bins (with shell thickness of $\sim 350~h^{-1}$ Mpc). The catalogs were created using the dark matter correlation function with  linear bias $1.5$. With a moderate observational time of three years, \textbf{we can recover the bias to within $\sim 20\%$ at $z \lesssim 0.7$, while errors in bias recovery are larger at redshift $z \sim 1$ due to large errors in localization}}}
 \end{figure*}
-The measured bias factor \textbf{probes the underlying dark matter distribution} using a novel astrophysical tracer and can be:
+The measured bias factor \textbf{probes the spatial distribution} of BBH mergers. It can be:
 \begin{itemize}
 	\item compared to the clustering properties of the galaxies as measured from the optical surveys  and obtain \textbf{insights on the type of galaxies that host these merger events}
 	\item related to the \textbf{mass of dark matter halos these events reside in}
