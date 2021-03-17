@@ -201,17 +201,19 @@
 %%%%%%%%%%%%%%%%%%%%%% An example text block %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{textblock}{7}(1,3.8)	% syntax: {colum_width} (x_coordinate, y_coordinate) in inches
+\begin{textblock}{7}(1,3.5)	% syntax: {colum_width} (x_coordinate, y_coordinate) in inches
 \LHead{Background}
 
-The maximum and minimum allowed masses of neutron stars ($\ms^\mathrm{min,~max}$) at a particular cosmic epoch has a simple dependence on the value of $G=\Gs$ at that epoch,
+Many alternative theories of gravity, e.g., scalar-tensor theories like Brans-Dicke theory \textbf{predict a time-varying gravitational ``constant''} $G$. We use gravitational-wave (GW) observations of binary neutron (BNS) stars to constrain the time-variation of $G$.
+
+The maximum and minimum allowed masses of neutron stars ($\ms^\mathrm{min,~max}$) at a particular cosmic epoch has a \textbf{simple dependence on the value of $G=\Gs$ at that epoch},
 \begin{equation}
 \ms^\mathrm{min,~max} = m^\mathrm{min,~max} ~ (\Gs/\Go)^{-3/2}
 \label{eq:m_max_min}
 \end{equation}
 where $\Go$ is the current value of $ G $, and $m^\mathrm{min,~max}$ is the current value of minimum and maximum mass for the neutron stars.
 
-Let $ \mo $ be the measured (redshifted) mass. The template matching condition gives,
+Let $ \mo $ be the measured (source-frame) mass. The template matching condition gives,
 \begin{equation}
 \mo = \frac{\Gs}{\Go} \, \left(\frac{1+\zs}{1+\zo}\right) \, \ms
 \label{eq:m_obs_with_z}
@@ -223,20 +225,20 @@ Using the above equations, we can derive the bounds within which the observed ma
 \mo^\mathrm{max,~min} = m^\mathrm{max,~min}~(\Gs/\Go)^{-1/2}. 
 \label{eq:m_obs_fn_Gf}
 \end{equation}
-That is, when $\Gs \neq \Go$, the allowed range of measured neutron star masses will be different from the range $m^\mathrm{min}$ --- $m^\mathrm{max}$. If $\Gs$ has a significant deviation from the current value $\Go$, the observed values of neutron star masses  would have gone out of the allowed range of neutron star masses. Hence such large deviations are ruled out by current GW observations. This is illustrated in Figure [\ref{fig:Gf_by_Go}].
+That is, when $\Gs \neq \Go$, the allowed range of measured NS masses will be different from the range $m^\mathrm{min}$ --- $m^\mathrm{max}$. If $\Gs$ has a significant deviation from the current value $\Go$, the \textbf{observed values of NS masses  would have gone out of the allowed range of NS masses}. Hence such \textbf{large deviations are ruled out by current GW observations} [illustrated in Figure [\ref{fig:Gf_by_Go}] using conservative estimates for $m^\mathrm{min}$---$m^\mathrm{max}$ $(0.09 M_{\odot}$---$4M_{\odot})$].
 
-\begin{textblock}{7}(1, 13)
+\begin{textblock}{7}(1, 14.3)
 	\LHead{Results}
 	\begin{itemize}
-		\item When {$\Gs \lesssim 4\times 10^{-3} \Go$ or when $\Gs \gtrsim 9 \Go$}, the observed mass range of the neutron stars in GW170817 will go out of the predicted mass range. Thus, the fractional deviation $\Delta G/\Go := (\Gs - \Go)/\Go$ in gravitational constant is constrained to be: $$\boxed{-0.996 \lesssim \Delta G/\Go \lesssim 8 }$$
-		\item If we know the time $\Delta t$ elapsed between the merger and the GW observation, we can compute an average rate of change of the $G$ during this period: $\dot{G}/\Go \simeq \Delta G/(\Go \Delta t)$. For GW170817, we infer:
-		$$\boxed{-7 \times 10^{-9}~\mathrm{yr}^{-1} \lesssim \dot{G}/\Go \lesssim 5 \times 10^{-8} ~\mathrm{yr}^{-1}}$$
+		\item When {$\Gs \lesssim 4\times 10^{-3} \Go$ or when $\Gs \gtrsim 9 \Go$}, the observed mass range of the NSs in GW170817 will go out of the predicted mass range. Thus, the fractional deviation $\Delta G/\Go := (\Gs - \Go)/\Go$ in gravitational constant is constrained to be: $$\boxed{-0.996 \lesssim \Delta G/\Go \lesssim 8 }$$
+		\item If we know the time $\Delta t$ elapsed between  merger and  GW observation, 
 	\end{itemize}
 \end{textblock}
 
-\begin{textblock}{7}(9,14)
+\begin{textblock}{7}(9,12.7)
+		we can compute an average rate of change of the $G$ during this period: $\dot{G}/\Go \simeq \Delta G/(\Go \Delta t)$. For GW170817, we infer:
+		$$\boxed{-7 \times 10^{-9}~\mathrm{yr}^{-1} \lesssim \dot{G}/\Go \lesssim 5 \times 10^{-8} ~\mathrm{yr}^{-1}}$$
 	\LHead{Summary and Future Directions}
-	
 	\begin{itemize}
 		\item Although our constraints are not as tight as the best available bounds from other measurements, they {sample a different cosmological epoch} that is not covered by other observations.
 		\item Gravitational-wave observations sampling the extremes of the neutron star masses will further tighten these bounds.
@@ -264,17 +266,17 @@ That is, when $\Gs \neq \Go$, the allowed range of measured neutron star masses 
 	\end{figure*}
 \end{textblock}
 
-\begin{textblock}{7}(9,3.5) % syntax: {colum_width} (x_coordinate, y_coordinate) in inches
+\begin{textblock}{7}(9,3.4) % syntax: {colum_width} (x_coordinate, y_coordinate) in inches
 	\LHead{}
 \begin{wrapfigure}[7]{r}{24.5cm}
 	 \fbox{%
 		\begin{minipage}{\dimexpr24cm-\fboxsep-\fboxrule}
 			\centering
 	
-	\includegraphics[width=1\linewidth]{GW170817_plot.pdf}
+	\includegraphics[width=0.95\linewidth]{GW170817_plot.pdf}
 	\caption{
 		%\begin{itemize}
-		 \textit{The horizontal axis corresponds to the assumed value of $G=\Gs$ (in units of the current value $\Go$) at BNS merger epoch, and the vertical axis corresponds to the measured value of the neutron star mass $\mo$ (in units of $M_{\odot}$). The horizontal patches correspond to the measured value of the neutron star masses from GW170817  (90\% credible regions; the dark shade corresponds to primary mass while the light shade corresponds to secondary mass). The vertical dashed lines correspond to the theoretically allowed range of neutron star masses $m^\mathrm{min} - m^\mathrm{max}$ at the current epoch. The tilted gray regions show the allowed range of the observed neutron star mass (eq. [\ref{eq:m_obs_fn_Gf}]). The horizontal error bars show the constraints on $\Gs/\Go$ that we obtain by requiring that the measured values overlap with the theoretically allowed (gray) region.}
+		 \textit{\textbf{Horizontal axis}: assumed value of $\Gs/\Go$ at the BNS merger epoch; \textbf{Vertical axis}: measured value of the neutron star mass $\mo/M_{\odot}$; \textbf{Horizontal patches}: measured value of the neutron star masses from GW170817  (90\% credible regions; dark shade is primary mass, light shade is secondary mass); \textbf{Vertical dashed lines}: theoretically allowed range of neutron star masses $m^\mathrm{min} - m^\mathrm{max}$ $(0.09 M_{\odot}-4 M_{\odot})$ at the current epoch. \textbf{Tilted gray regions}: allowed range of the observed neutron star mass (eq. [\ref{eq:m_obs_fn_Gf}]). \textbf{Horizontal error bars}: constraints on $\Gs/\Go$ by requiring that the measured values overlap with the theoretically allowed (gray) region.}
 		%\end{itemize}
 	}
 	\label{fig:Gf_by_Go}
