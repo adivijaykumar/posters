@@ -176,7 +176,7 @@
 	{\color{TitleColor}
 		
 	\begin{center}
-				\Title{Constraints on the time variation of the gravitational constant using gravitational-wave observations of binary neutron stars}
+					\Title{Constraints on the time variation of the gravitational constant using gravitational-wave observations of binary neutron stars}
 				
 				{\Large [\ arXiv:2003.12832, accepted for publication in Phys. Rev. Lett. ]\ }
 	\end{center}
@@ -204,25 +204,34 @@
 \begin{textblock}{7}(1,3.5)	% syntax: {colum_width} (x_coordinate, y_coordinate) in inches
 \LHead{Background}
 
-Many alternative theories of gravity, e.g., scalar-tensor theories like Brans-Dicke theory \textbf{predict a time-varying gravitational ``constant''} $G$. We use gravitational-wave (GW) observations of binary neutron (BNS) stars to constrain the time-variation of $G$.
+Many alternative theories of gravity, e.g., scalar-tensor theories like Brans-Dicke theory predict a time-varying gravitational ``constant'' $G$. \textbf{We use gravitational-wave (GW) observations of binary neutron (BNS) stars to constrain the time-variation} of $G$.
 
-The maximum and minimum allowed masses of neutron stars ($\ms^\mathrm{min,~max}$) at a particular cosmic epoch has a \textbf{simple dependence on the value of $G=\Gs$ at that epoch},
+The maximum and minimum allowed masses of neutron stars ($\ms^\mathrm{min,~max}$) at a particular cosmic epoch has a \textbf{simple dependence on the value of} $G=\Gs$ \textbf{at that epoch},
 \begin{equation}
 \ms^\mathrm{min,~max} = m^\mathrm{min,~max} ~ (\Gs/\Go)^{-3/2}
 \label{eq:m_max_min}
 \end{equation}
 where $\Go$ is the current value of $ G $, and $m^\mathrm{min,~max}$ is the current value of minimum and maximum mass for the neutron stars.
 
-Let $ \mo $ be the measured (source-frame) mass. The template matching condition gives,
+Let $ \mo $ be the measured (source-frame) mass. The \textbf{template matching condition} gives,
+\begin{textblock}{15}(1, 17.8)
+	\begin{figure*}[t]
+		\centering
+		\includegraphics[width=0.95\linewidth]{gdot_over_cosmic_time.pdf}
+		\caption{Comparison of the constraints on $\dot{G}/\Go$ obtained from various observations with confidence levels of the constraints indicated in brackets (LLR denotes constraints from lunar laser ranging). The horizontal axis shows the look back time. The constraints presented this paper are labeled as GW170817 and GW190425, while the expected constraints from 10 year of observations with third-generation (3G) GW detectors is shown by the pink band.}
+		\label{fig:gdot_plots}
+	\end{figure*}
+\end{textblock}
+
 \begin{equation}
 \mo = \frac{\Gs}{\Go} \, \left(\frac{1+\zs}{1+\zo}\right) \, \ms
 \label{eq:m_obs_with_z}
 \end{equation}
 where $\zs$ is the true cosmological redshift of the source and $\zo$ is the estimated redshift, say, from an electromagnetic observation.
 
-Using the above equations, we can derive the bounds within which the observed masses should lie,
+Using the above equations, we can derive the \textbf{bounds within which the observed masses should lie},
 \begin{equation}
-\mo^\mathrm{max,~min} = m^\mathrm{max,~min}~(\Gs/\Go)^{-1/2}. 
+\boxed{\mo^\mathrm{max,~min} = m^\mathrm{max,~min}~(\Gs/\Go)^{-1/2}. }
 \label{eq:m_obs_fn_Gf}
 \end{equation}
 That is, when $\Gs \neq \Go$, the allowed range of measured NS masses will be different from the range $m^\mathrm{min}$ --- $m^\mathrm{max}$. If $\Gs$ has a significant deviation from the current value $\Go$, the \textbf{observed values of NS masses  would have gone out of the allowed range of NS masses}. Hence such \textbf{large deviations are ruled out by current GW observations} [illustrated in Figure [\ref{fig:Gf_by_Go}] using conservative estimates for $m^\mathrm{min}$---$m^\mathrm{max}$ $(0.09 M_{\odot}$---$4M_{\odot})$].
@@ -235,12 +244,12 @@ That is, when $\Gs \neq \Go$, the allowed range of measured NS masses will be di
 	\end{itemize}
 \end{textblock}
 
-\begin{textblock}{7}(9,12.7)
+\begin{textblock}{7}(9,12.8)
 		we can compute an average rate of change of the $G$ during this period: $\dot{G}/\Go \simeq \Delta G/(\Go \Delta t)$. For GW170817, we infer:
 		$$\boxed{-7 \times 10^{-9}~\mathrm{yr}^{-1} \lesssim \dot{G}/\Go \lesssim 5 \times 10^{-8} ~\mathrm{yr}^{-1}}$$
 	\LHead{Summary and Future Directions}
 	\begin{itemize}
-		\item Although our constraints are not as tight as the best available bounds from other measurements, they {sample a different cosmological epoch} that is not covered by other observations.
+		\item Although our constraints are not as tight as the best available bounds from other measurements, they \textbf{sample a different cosmological epoch} that is not covered by other observations.
 		\item Gravitational-wave observations sampling the extremes of the neutron star masses will further tighten these bounds.
 		\item Additional detections of binary neutron stars would constrain the variation of G at different epochs. Projected constraints from third-generation GW detectors are shown in Figure [\ref{fig:gdot_plots}].
 	\end{itemize}
@@ -257,16 +266,7 @@ That is, when $\Gs \neq \Go$, the allowed range of measured NS masses will be di
 \end{textblock}
 
 
-\begin{textblock}{15}(1, 17.8)
-	\begin{figure*}[t]
-		\centering
-		\includegraphics[width=0.95\linewidth]{gdot_over_cosmic_time.pdf}
-		\caption{Comparison of the constraints on $\dot{G}/\Go$ obtained from various observations with confidence levels of the constraints indicated in brackets (LLR denotes constraints from lunar laser ranging). The horizontal axis shows the look back time. The constraints presented this paper are labeled as GW170817 and GW190425, while the expected constraints from 10 year of observations with third-generation (3G) GW detectors is shown by the pink band.}
-		\label{fig:gdot_plots}
-	\end{figure*}
-\end{textblock}
-
-\begin{textblock}{7}(9,3.4) % syntax: {colum_width} (x_coordinate, y_coordinate) in inches
+\begin{textblock}{7}(9,3.5) % syntax: {colum_width} (x_coordinate, y_coordinate) in inches
 	\LHead{}
 \begin{wrapfigure}[7]{r}{24.5cm}
 	 \fbox{%
